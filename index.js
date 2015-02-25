@@ -91,7 +91,9 @@ MandrillApi.prototype.post = function( ctx, next ) {
       subject: options.subject || this.config.defaultSubject,
       from_email: options.from_email || this.config.defaultFromAddress,
       from_name: options.from_name || this.config.defaultFromName,
-      to: options.to || []
+      to: options.to || [],
+      global_merge_vars: options.global_merge_vars || [],                                                                                                                                                                                     
+      merge_vars: options.merge_vars || []
     };
 
 
